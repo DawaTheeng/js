@@ -38,3 +38,28 @@ const myFunction = function(){
 console.log(typeof myFunction);
 
 // https://tc39.es/ecma262/#sec-ecmascript-data-types-and-values
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive),  Heap (Non-Primitive)-> Reference
+
+let myYoutubename = "Dawa123.com"
+
+let anothername = myYoutubename
+anothername = "paulcode"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "Dawa@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
